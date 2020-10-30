@@ -1,38 +1,45 @@
 from abc import ABCMeta, abstractmethod
 
 
+# Product
 class Section(metaclass=ABCMeta):
     @abstractmethod
     def describe(self):
         pass
 
 
+# ConcreteProduct
 class PersonalSection(Section):
     def describe(self):
         print("Personal Section")
 
 
+# ConcreteProduct
 class AlbumSection(Section):
     def describe(self):
         print("Album Section")
 
 
+# ConcreteProduct
 class PatentSection(Section):
     def describe(self):
         print("Patent Section")
 
 
+# ConcreteProduct
 class PublicationSection(Section):
     def describe(self):
         print("Publication Section")
 
 
+# Creator
 class Profile(metaclass=ABCMeta):
     def __init__(self):
         self.sections = []
         self.create_profile()
 
     @abstractmethod
+    # factory_method()
     def create_profile(self):
         pass
 
@@ -43,6 +50,7 @@ class Profile(metaclass=ABCMeta):
         self.sections.append(section)
 
 
+# ConcreteCreator
 class Linkedin(Profile):
     def create_profile(self):
         self.add_sections(PersonalSection())
@@ -50,6 +58,7 @@ class Linkedin(Profile):
         self.add_sections(PublicationSection())
 
 
+# ConcreteCreator
 class Facebook(Profile):
     def create_profile(self):
         self.add_sections(PersonalSection())
