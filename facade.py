@@ -5,6 +5,8 @@
 # são uma combinação dos padrões Classe e Objeto.
 # O Façade oculta as complexidades do sistema interno e oferece uma interface ao cliente para
 # que este possa acessar o sistema de forma bem simplificada.
+# Princípio do conhecimento mínimo, que nos orienta no sentido de reduzir as interações entre
+# os objetos a apenas alguns "amigos" que sejam próximos a você.
 
 # Classe Façade
 # EventManager usa composição para criar objetos de susbistemas como Hotelier, Caterer e
