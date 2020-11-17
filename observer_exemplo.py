@@ -1,6 +1,6 @@
 
 # Sujeito
-class NewPublisher:
+class NewsPublisher:
     def __init__(self):
         self.__subscribers = []
         self.__latest_news = []
@@ -66,7 +66,7 @@ class AnyOtherSubscriber(Subscriber):
 
 
 if __name__ == '__main__':
-    news_publisher = NewPublisher()
+    news_publisher = NewsPublisher()
 
     for Subscribers in [SMSSubscriber, EmailSubscriber, AnyOtherSubscriber]:
         Subscribers(news_publisher)

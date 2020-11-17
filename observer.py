@@ -37,3 +37,12 @@ subject = Subject()
 observer1 = Observer1(subject)
 observer2 = Observer2(subject)
 subject.notify_all('notification')
+
+"""
+Modelos do padrão Observer:
+Pull: Não é eficiente, pois envolve dois passos - o primeiro passo para o Subject
+notificar o Observer e o segundo passo para o Observer obter os dados necessários
+do Subject.
+Push: De modo diferente do modelo pull, as mudanças são enviados pelo Subject ao
+Observer
+"""
