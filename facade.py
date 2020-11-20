@@ -1,6 +1,6 @@
 # Padrão de projeto estrutural.
 # Enquanto os padrões Classe descrevem abstrações com a ajuda de herança e oferecem uma interface
-# e oferecem uma interface de programação mais conveniente, o padrão Objeto descreve como os
+# de programação mais conveniente, o padrão Objeto descreve como os
 # objetos podem ser associados e compostos para formar objetos maiores. Os padrões estruturais
 # são uma combinação dos padrões Classe e Objeto.
 # O Façade oculta as complexidades do sistema interno e oferece uma interface ao cliente para
